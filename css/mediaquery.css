@@ -1,0 +1,49 @@
+@media screen and (min-width: 800px) {
+    .hide{
+        display: initial !important;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    body > header {
+        width: 8rem;
+    }
+
+    main{
+        margin-left: 8rem;
+    }
+
+    section header::after{
+        left: 8rem;
+    }
+
+    h1{
+        font-size: 6rem;
+    }
+
+    #navigation-menu li{
+        margin:0;
+    }
+
+    #navigation-menu span{
+        width: 6em;
+        text-align: left;
+        
+    }
+
+    .whoiam-pic img{
+        max-width: 20rem;
+        width: 100%;
+    }
+
+    #studies .content-wrapper{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .form-pic{
+        display: inherit;
+    }
+}

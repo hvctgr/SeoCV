@@ -1,0 +1,78 @@
+
+body >  header {
+    background-color: var(--color-bg);
+    position: fixed;
+    width: 2.5rem;
+    text-align: center; 
+    height: 100%;
+    color: var(--color-text);
+    font-family: 'Raleway';
+    font-weight: 600;
+    }
+    
+.logo-nav {
+    width: 70%;
+    margin-top: 0.5em;
+}
+
+.mobile i{
+    cursor: pointer;
+}
+
+#navigation-menu {
+    margin-top:50%;
+}
+
+#navigation-menu li{
+    list-style:none;
+    height:1.5em;
+    width:1.4em;
+    background-color: var(--color-bg);
+    padding-top: 2rem;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    margin: auto;
+}
+
+#navigation-menu span{
+    /* Container properties */
+    width:0;
+    left:26px;
+    position:absolute;
+    overflow:hidden;
+    height: 100%;
+    background-color: inherit;
+
+    /* CSS3 Transition: */
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    transition: 0.25s;
+}
+
+#navigation-menu a{
+    display:block;
+    position:relative;
+    height: 100%;
+}
+
+#navigation-menu a:hover span{ 
+    width:6em; 
+    overflow:visible;
+
+    -moz-box-shadow:0 0 0.15rem #fff;
+    -webkit-box-shadow:0 0 0.15rem #fff;
+    box-shadow:0 0 5px 0.15rem #fff;
+}
+
+#navigation-menu a:hover{
+    text-decoration:none;
+
+    /* CSS outer glow with the box-shadow property */
+    -moz-box-shadow:0 0 0.15rem #fff;
+    -webkit-box-shadow:0 0 0.15rem #fff;
+    box-shadow:0 0 5px 0.15rem #fff;
+}
+
+.home-nav i{
+    vertical-align: middle;
+}
