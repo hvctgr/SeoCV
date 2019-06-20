@@ -1,3 +1,40 @@
+/* reset */ 
+
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul, nav li, form ul, form li {
+    margin: 0;
+    padding: 0; 
+}
+
+nav ul, form ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+blockquote {
+    quotes: '\00AB' '\00BB' '\201E' '\201C';
+}
+ blockquote::before {
+     content: open-quote;
+ }
+ blockquote::after {
+     content: close-quote;
+ }
+
+ img {
+     width: 100%;
+ }
+
+/* general */
+
 :root {
     --color-text: #072083;
     --color-bg: #f4951d;
@@ -122,3 +159,337 @@ section header::after{
     background-image: url(../assets/contact.jpg);
 }
 
+/* Navigation menu */
+
+body >  header {
+    background-color: var(--color-bg);
+    position: fixed;
+    width: 2.5rem;
+    text-align: center; 
+    height: 100%;
+    color: var(--color-text);
+    font-family: 'Raleway';
+    font-weight: 600;
+    }
+    
+.logo-nav {
+    width: 70%;
+    margin-top: 0.5em;
+}
+
+.mobile i{
+    cursor: pointer;
+}
+
+#navigation-menu {
+    margin-top:50%;
+}
+
+#navigation-menu li{
+    list-style:none;
+    height:1.5em;
+    width:1.4em;
+    background-color: var(--color-bg);
+    padding-top: 2rem;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    margin: auto;
+}
+
+#navigation-menu span{
+    /* Container properties */
+    width:0;
+    left:26px;
+    position:absolute;
+    overflow:hidden;
+    height: 100%;
+    background-color: inherit;
+
+    /* CSS3 Transition: */
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    transition: 0.25s;
+}
+
+#navigation-menu a{
+    display:block;
+    position:relative;
+    height: 100%;
+}
+
+#navigation-menu a:hover span{ 
+    width:6em; 
+    overflow:visible;
+
+    -moz-box-shadow:0 0 0.15rem #fff;
+    -webkit-box-shadow:0 0 0.15rem #fff;
+    box-shadow:0 0 5px 0.15rem #fff;
+}
+
+#navigation-menu a:hover{
+    text-decoration:none;
+
+    /* CSS outer glow with the box-shadow property */
+    -moz-box-shadow:0 0 0.15rem #fff;
+    -webkit-box-shadow:0 0 0.15rem #fff;
+    box-shadow:0 0 5px 0.15rem #fff;
+}
+
+.home-nav i{
+    vertical-align: middle;
+}
+
+
+/* Who I am */ 
+
+.whoiam-content{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 1rem;
+}
+
+.whoiam-pic img{
+    min-width: 10rem;
+}
+
+
+/* Studies */
+
+.studies-content{
+    display: grid;
+    grid-template-columns: 6rem auto;
+    margin: 1rem;
+}
+
+.studies-pic img{
+    width: 6rem;
+}
+
+.studies-text{
+    padding-left: 1rem;
+}
+
+#studies .content-wrapper{
+    display: initial;
+}
+
+
+/* Work */
+
+.work-content{
+    margin-top:1em;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.work-pic img{
+    width: 65%;
+    max-height: 8rem;
+}
+
+.show-more {
+    font-size: 1.5rem;
+}
+
+.show-more:hover{
+    -moz-box-shadow:0 0 0.15rem #fff;
+    -webkit-box-shadow:0 0 0.15rem #fff;
+    box-shadow:0 0 5px 0.15rem #fff;
+
+    cursor: pointer;
+}
+
+.work-text p{
+    text-align: justify;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* About */
+
+#about .content-wrapper{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.resp-container{
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.resp-iframe{
+    position: absolute;
+    top: 5%;
+    left: 12%;
+    width: 75%;
+    height: 75%;
+    border: 0;
+}
+
+.about-text{
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+}
+
+.about-text ul {
+    font-family: 'Oswald', sans-serif;
+    list-style-image: url(../favicon.ico);
+}
+
+
+/* Contact */
+
+#contact .content-wrapper{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.form-wrapper{
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+#contact-form{
+    width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+#contact-form ul{
+display: grid;
+}
+
+#contact-form ul li, #other-field{
+    margin: 0.2rem;
+}
+
+.hidden-field{
+    display: none;
+}
+
+.contact-text{
+    margin-top: 2rem;
+    font-weight: 600;
+}
+
+input, textarea, select {
+    float: right;
+    width: 70%;
+    border: solid 2px #fff;
+    box-shadow: -1px 1px 1px #fff;
+    border-radius: 0.25rem;
+}
+
+.btn-submit{
+    margin-left: auto;
+    background: var(--color-text);
+    color: var(--color-bg);
+    border: none;
+    height: 2rem;
+    width: 5rem;
+    border-radius: 1rem;
+    font-weight: 600;
+}
+
+.btn-submit:hover{
+    background: var(--color-bg);
+    color: var(--color-text);
+    
+    -moz-box-shadow:0 0 0.15rem #fff;
+    -webkit-box-shadow:0 0 0.15rem #fff;
+    box-shadow:0 0 5px 0.15rem #fff;
+}
+
+.align-btn-submit {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.form-pic{
+    display: none;
+}
+
+#messageCounter {
+    margin-left: auto;
+    width: 3rem;
+    font-size: 0.7rem;
+}
+
+
+/* Footer */
+
+.footer-wrapper{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.footer-pic{
+    text-align: right; 
+}
+
+.footer-pic img{
+    width: 10rem;
+}
+
+.social-icon{
+    font-size: 2.5rem;
+    padding-top: 1em;  
+    color: var(--color-text);
+}
+
+/* Media query */
+
+@media screen and (min-width: 800px) {
+    .hide{
+        display: initial !important;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    body > header {
+        width: 8rem;
+    }
+
+    main{
+        margin-left: 8rem;
+    }
+
+    section header::after{
+        left: 8rem;
+    }
+
+    h1{
+        font-size: 6rem;
+    }
+
+    #navigation-menu li{
+        margin:0;
+    }
+
+    #navigation-menu span{
+        width: 6em;
+        text-align: left;
+        
+    }
+
+    .whoiam-pic img{
+        max-width: 20rem;
+        width: 100%;
+    }
+
+    #studies .content-wrapper{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .form-pic{
+        display: inherit;
+    }
+}
