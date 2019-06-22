@@ -1,40 +1,7 @@
-/*import { displayMenu } from './menu.js'
-import { setForm } from './form.js'
-import { selectionChange } from './form.js'
-import { wordCount } from './wordCounter.js'
-import { setScroll } from './scrollspy.js'
-import { showMoreWork } from './showMore.js'
-*/
 
-/*
-function app(){
-    displayMenu()
-    setForm()
-    selectionChange()
-    wordCount()
-    setScroll()
-    showMoreWork()
-}
-
-document.addEventListener('DOMContentLoaded', app)
-*/
 
 /* Display menu */
-function displayMenu(){
-    let aMenuItems = document.querySelector("nav.tablet")
-    let aOpenMenuIcon = document.querySelector('#open-menu')
-    let aCloseMenuIcon = document.querySelector('#close-menu')
-
-    aOpenMenuIcon.addEventListener('click', OpenMenu)
-    aCloseMenuIcon.addEventListener('click', OpenMenu)
-    
-    function OpenMenu() {
-        aMenuItems.classList.toggle('hide')
-        aCloseMenuIcon.classList.toggle('hide')
-        aOpenMenuIcon.classList.toggle('hide')
-    }
-}
-
+console.log('cargo js')
 
 /* Form */
 function setForm() {

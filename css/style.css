@@ -53,7 +53,7 @@ p {
     margin-bottom: 1rem;
 }
 
-h1 {
+h1, h2 {
     -webkit-text-stroke: 0.15rem black;
     color: var(--color-titles);
     font-weight: 900;
@@ -86,7 +86,7 @@ footer {
 }
 
 
-/*-----------------------------------------*/
+/* General */
 section header{
     background-size: cover;
     height: 22rem;
@@ -181,11 +181,11 @@ body >  header {
     cursor: pointer;
 }
 
-#navigation-menu {
+.menu-nav {
     margin-top:50%;
 }
 
-#navigation-menu li{
+.menu-nav li{
     list-style:none;
     height:1.5em;
     width:1.4em;
@@ -196,7 +196,7 @@ body >  header {
     margin: auto;
 }
 
-#navigation-menu span{
+.menu-nav span{
     /* Container properties */
     width:0;
     left:26px;
@@ -211,13 +211,13 @@ body >  header {
     transition: 0.25s;
 }
 
-#navigation-menu a{
+.menu-nav a{
     display:block;
     position:relative;
     height: 100%;
 }
 
-#navigation-menu a:hover span{ 
+.menu-nav a:hover span{ 
     width:6em; 
     overflow:visible;
 
@@ -226,7 +226,7 @@ body >  header {
     box-shadow:0 0 5px 0.15rem #fff;
 }
 
-#navigation-menu a:hover{
+.menu-nav a:hover{
     text-decoration:none;
 
     /* CSS outer glow with the box-shadow property */

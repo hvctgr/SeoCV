@@ -6,43 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Hector Vazquez">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Son Gokuh | Kakarot</title>    
+    <title>Son Goku | Kakarot</title>    
+    <meta name="description" content="Son Goku, Protagonista de la serie Dragon Ball" />
+    <meta name="keywords" content="manga, dragon ball, saiyan">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Concert+One|Oswald|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-        crossorigin="anonymous">
-    
-
+        crossorigin="anonymous">      
 </head>
 
 <body>
     <header>
-        <img class="logo-nav" src="./assets/pics/profile2.jpg" alt="CV">
-        <nav class="mobile">
-            <i class="fas fa-bars" id="open-menu"></i>
-            <i class="fas fa-times hide" id="close-menu"></i>
-        </nav>
-
-        <nav class="tablet hide">
-            <ul id="navigation-menu">
-                <li><a class="home-nav active" href="#home">
-                        <i class="fab fa-ello"></i>
-                        <span>Hola</span></a></li>
-                <li><a class="whoiam-nav" href="#whoiam">
-                        <i class="fas fa-user-circle"></i>
-                        <span>Quién soy</span></a></li>
-                <li><a class="studies-nav" href="#studies">
-                        <i class="fas fa-university"></i>
-                        <span>Maestros</span></a></li>
-                <li><a class="work-nav" href="#work">
-                        <i class="fas fa-briefcase"></i>
-                        <span>Batallas</span></a></li>
-                <li><a class="about-nav" href="#about">
-                        <i class="fas fa-gift"></i>
-                        <span>Curiosidades</span></a></li>
-                <li><a class="contact-nav" href="#contact">
-                        <i class="fas fa-address-card"></i>
-                        <span>Contacto</span></a></li>
+        <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+            <img class="logo-nav" src="./assets/pics/profile2.jpg" alt="Goku logo">
+        </figure>
+        <nav>
+            <ul class="menu-nav">
+                <li><a class="home-nav active" href="#home" title="Inicio"><i class="fab fa-ello"></i><span>Hola</span></a></li>
+                <li><a class="whoiam-nav" href="#whoiam" title="Presentacion Goku"><i class="fas fa-user-circle"></i><span>Quién soy</span></a></li>
+                <li><a class="studies-nav" href="#studies" title="Maestros"><i class="fas fa-university"></i><span>Maestros</span></a></li>
+                <li><a class="work-nav" href="#work" title="Batallas"><i class="fas fa-briefcase"></i><span>Batallas</span></a></li>
+                <li><a class="about-nav" href="#about" title="Curiosidades"><i class="fas fa-gift"></i><span>Curiosidades</span></a></li>
+                <li><a class="contact-nav" href="#contact" title="Formulario de contacto"><i class="fas fa-address-card"></i><span>Contacto</span></a></li>
             </ul>
         </nav>
     </header>
@@ -51,8 +36,8 @@
         <section id="home">
             <header class="home-header">
                 <div class="centered-content">
-                    <h1>Son Gokuh</h1>
-                    <h1>(孫悟空)</h1>
+                    <h1>Son Goku</h1>
+                    <p>(孫悟空)</p>
                 </div>
             </header>
             <div class="content-wrapper">
@@ -66,14 +51,14 @@
             <header class="whoiam-header">
                 <div class="title-wrapper">
                     <div class="centered-content">
-                        <h1>Quién soy</h1>
+                        <h2>Quién soy</h2>
                     </div>
                 </div>
             </header>
             <div class="content-wrapper">
                 <article class="whoiam-content">
                     <div class="whoiam-text">
-                        <h2>Son Goku</h2>
+                        <h3>Son Goku</h3>
                         <p>Son Goku es el protagonista principal del manga y anime de Dragon Ball creado por Akira
                             Toriyama. Su nombre real y de nacimiento es Kakarrot y es uno de los pocos Saiyan que
                             lograron sobrevivir a la destrucción total del Planeta Vegeta del Universo 7. Es el segundo
@@ -82,6 +67,7 @@
                             Son Goku Jr.
                         </p>
                     </div>
+                    <!-- figure caption -->
                     <div class="whoiam-pic">
                         <img src="./assets/pics/profile.jpg">
                     </div>
@@ -93,7 +79,7 @@
             <header class="studies-header">
                 <div class="title-wrapper">
                     <div class="centered-content">
-                        <h1>Maestros</h1>
+                        <h2>Maestros</h2>
                     </div>
                 </div>
             </header>
@@ -103,7 +89,7 @@
                         <img src="./assets/pics/studies1.png">
                     </div>
                     <div class="studies-text">
-                        <h2>Muten Roshi</h2>
+                        <h3>Muten Roshi</h3>
                         <p>Es el maestro y fundador del Estilo Tortuga, y su primer maestro. Se le considera un Artista
                             Marcial versátil y el más experimentado, con un gran arsenal de técnicas como el Kamehameha
                             Original</p>
@@ -114,7 +100,7 @@
                         <img src="./assets/pics/studies2.jpg">
                     </div>
                     <div class="studies-text">
-                        <h2>Kami Sama</h2>
+                        <h3>Kami Sama</h3>
                         <p>Asistido por Mr. Popo, Gokū durante el desarrollo de su entrenamiento aprende el concepto
                             del Ki, la energía vital de cada ser, y las capacidades de sentir el movimiento y las
                             acciones del enemigo sin utilizar los sentidos, sintiendo el Ki de los demás y ocultando el
@@ -126,7 +112,7 @@
                         <img src="./assets/pics/studies3.jpg">
                     </div>
                     <div class="studies-text">
-                        <h2>Señor Kaito del Norte</h2>
+                        <h3>Señor Kaito del Norte</h3>
                         <p>Kaiō-sama le entrena en técnicas de combate, logrando enseñarle con eficacia el Kaiō Ken y
                             la Genki-dama, dos técnicas de su invención, pero que ni él mismo había conseguido llevar a
                             cabo.</p>
@@ -141,7 +127,7 @@
             <header class="work-header">
                 <div class="title-wrapper">
                     <div class="centered-content">
-                        <h1>Batallas</h1>
+                        <h2>Batallas</h2>
                     </div>
                 </div>
             </header>
@@ -151,7 +137,7 @@
                         <img src="./assets/pics/work1.jpg">
                     </div>
                     <div class="work-text">
-                        <h2> Torneo de las Artes Marciales </h2>
+                        <h3> Torneo de las Artes Marciales </h3>
                         <p>Goku pasa los tres próximos años formación por él mismo para luchar en el XXII Torneo
                             Mundial de Artes Marciales. Por el momento en que se inicia el torneo, Goku tiene 15 años
                             (aunque todavía se ve como un muchacho preteen). El más fuerte oponente de Goku es
@@ -184,7 +170,7 @@
                         <img src="./assets/pics/work2.jpg">
                     </div>
                     <div class="work-text">
-                        <h2> Namek </h2>
+                        <h3> Namek </h3>
                         <p>Durante su viaje a Namek, Goku entrena en diversos niveles de gravedad pero la máquina de
                             gravedad artificial de la nave comienza a funcionar mal, haciendo que la aumente 100 veces,
                             casi aplastando a Goku. Finalmente Goku es capaz de arreglar la gravedad con el control de
@@ -272,7 +258,7 @@
                         <img src="./assets/pics/work3.png">
                     </div>
                     <div class="work-text">
-                        <h2>Ejercito de la Red Ribbon</h2>
+                        <h3>Ejercito de la Red Ribbon</h3>
                         <p>Dos años más tarde, Goku regresa a la Tierra, donde se enfrenta a Trunks, el hijo Saiyajin
                             de Vegeta y Bulma del futuro. El adolescente como un Super Saiyajin acababa de matar tanto
                             Freezer y a su padre King Cold momentos antes de que llegara Goku. Trunks pone a prueba el
@@ -344,7 +330,7 @@
                         <img src="./assets/pics/work4.jpg">
                     </div>
                     <div class="work-text">
-                        <h2>Mago Babidi y Majin Buu</h2>
+                        <h3>Mago Babidi y Majin Buu</h3>
                         <p>Siete años más tarde, a Goku se le da un permiso especial para regresar a la Tierra por un
                             día para participar en el 25° Torneo Mundial de Artes Marciales, donde asistirán Gohan,
                             Goten, Vegeta y Trunks. En su regreso se encuentra con su segundo hijo, Goten, que había
@@ -423,18 +409,19 @@
             </div>
         </section>
 
-        <section id="about">
+        <section id="about"> <!-- <div itemscope itemtype="http://schema.org/ItemList"> -->
             <header class="about-header">
                 <div class="title-wrapper">
                     <div class="centered-content">
-                        <h1>Curiosidades</h1>
+                        <h2>Curiosidades</h2>
                     </div>
                 </div>
             </header>
             <div class="content-wrapper">
+                <!-- Item list -->
                 <div class="about-text">
                     <ul>
-                        <li>
+                        <li> <!-- <li itemprop="itemListElement">XHTML</li> -->
                             El personaje está basado en el protagonista de la historia china Viaje al Oeste donde éste
                             es el Rey Mono (el cual se llama Sun Wukong (ambos comparten la misma escritura
                             Hanzi-Kanji).
@@ -506,7 +493,7 @@
             <header class="contact-header">
                 <div class="title-wrapper">
                     <div class="centered-content">
-                        <h1>Contacto</h1>
+                        <h2>Contacto</h2>
                     </div>
                 </div>
             </header>
