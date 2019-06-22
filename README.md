@@ -13,6 +13,7 @@ Modificación de fantastiCV para optimizarla de cara al SEO.
 
 - De forma general, cada una de las secciones contiene un `header`, donde se ubica el banner con nombre de cada sección, y un `div` con el contenido de la sección a efectos de manejar los estilos.
 
+- Todas las etiquetas `div` que anteriormente envolvían a imágenes o vídeo se han cambiado por `figure`. Además en aquellas que no eran logos se les ha añadido un `figcaption`
 
 - El footer ha pasado a listarse como 3 elementos `li` (imagen e iconos a enlaces externos).
 

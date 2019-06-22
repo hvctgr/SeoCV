@@ -17,8 +17,8 @@
 
 <body>
     <header>
-        <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-            <img class="logo-nav" src="./assets/pics/profile2.jpg" alt="Goku logo">
+        <figure itemscope itemtype="https://schema.org/ImageObject" class="logo-nav">
+            <img itemprop="image" src="./assets/pics/profile2.jpg" alt="Goku logo">
         </figure>
         <nav>
             <ul class="menu-nav">
@@ -37,7 +37,7 @@
             <header class="home-header">
                 <div class="centered-content">
                     <h1>Son Goku</h1>
-                    <p>(孫悟空)</p>
+                    <p class="kanji">(孫悟空)</p>
                 </div>
             </header>
         </section>
@@ -63,11 +63,10 @@
                         </p>
                     </div>
                    
-                    <div class="whoiam-pic">
-                        <figure itemscope itemtype="https://schema.org/ImageObject">
-                            <img src="./assets/pics/profile.jpg">
-                        </figure>
-                    </div>
+                    <figure itemscope itemtype="https://schema.org/ImageObject" class="whoiam-pic">
+                        <img  itemprop="image" src="./assets/pics/profile.jpg">
+                        <figcaption itemprop="caption">Son Goku</figcaption>
+                    </figure>
                 </div>
             </div>
         </section>
@@ -82,9 +81,10 @@
             </header>
             <div class="content-wrapper">
                 <div class="studies-content">
-                    <div class="studies-pic">
+                    <figure itemscope itemtype="https://schema.org/ImageObject" class="studies-pic">
                         <img src="./assets/pics/studies1.png">
-                    </div>
+                        <figcaption itemprop="caption">Kame</figcaption>
+                    </figure>
                     <div class="studies-text">
                         <h3>Muten Roshi</h3>
                         <p>Es el maestro y fundador del Estilo Tortuga, y su primer maestro. Se le considera un Artista
@@ -93,9 +93,10 @@
                     </div>
                 </div>
                 <div class="studies-content">
-                    <div class="studies-pic">
+                    <figure itemscope itemtype="https://schema.org/ImageObject" class="studies-pic">
                         <img src="./assets/pics/studies2.jpg">
-                    </div>
+                        <figcaption itemprop="caption">Kami</figcaption>
+                    </figure>
                     <div class="studies-text">
                         <h3>Kami Sama</h3>
                         <p>Asistido por Mr. Popo, Gokū durante el desarrollo de su entrenamiento aprende el concepto
@@ -105,9 +106,10 @@
                     </div>
                 </div>
                 <div class="studies-content">
-                    <div class="studies-pic">
+                    <figure itemscope itemtype="https://schema.org/ImageObject" class="studies-pic">
                         <img src="./assets/pics/studies3.jpg">
-                    </div>
+                        <figcaption itemprop="caption">Kaio</figcaption>
+                    </figure>
                     <div class="studies-text">
                         <h3>Señor Kaito del Norte</h3>
                         <p>Kaiō-sama le entrena en técnicas de combate, logrando enseñarle con eficacia el Kaiō Ken y
@@ -130,9 +132,10 @@
             </header>
             <div class="content-wrapper">
                 <div class="work-content">
-                    <div class="work-pic">
+                    <figure itemscope itemtype="https://schema.org/ImageObject" class="work-pic">
                         <img src="./assets/pics/work1.jpg">
-                    </div>
+                        <figcaption itemprop="caption">Escenario torneo</figcaption>
+                    </figure>
                     <div class="work-text">
                         <h3> Torneo de las Artes Marciales </h3>
                         <p>Goku pasa los tres próximos años formación por él mismo para luchar en el XXII Torneo
@@ -163,9 +166,10 @@
                     </div>
                 </div>
                 <div class="work-content">
-                    <div class="work-pic">
+                    <figure itemscope itemtype="https://schema.org/ImageObject" class="work-pic">
                         <img src="./assets/pics/work2.jpg">
-                    </div>
+                        <figcaption itemprop="caption">Planeta Namek</figcaption>
+                    </figure>
                     <div class="work-text">
                         <h3> Namek </h3>
                         <p>Durante su viaje a Namek, Goku entrena en diversos niveles de gravedad pero la máquina de
@@ -251,9 +255,10 @@
                     </div>
                 </div>
                 <div class="work-content">
-                    <div class="work-pic">
+                    <figure itemscope itemtype="https://schema.org/ImageObject" class="work-pic">
                         <img src="./assets/pics/work3.png">
-                    </div>
+                        <figcaption itemprop="caption">Red Ribbon Army</figcaption>
+                    </figure>
                     <div class="work-text">
                         <h3>Ejercito de la Red Ribbon</h3>
                         <p>Dos años más tarde, Goku regresa a la Tierra, donde se enfrenta a Trunks, el hijo Saiyajin
@@ -323,9 +328,10 @@
                     </div>
                 </div>
                 <div class="work-content">
-                    <div class="work-pic">
+                    <figure itemscope itemtype="https://schema.org/ImageObject" class="work-pic">
                         <img src="./assets/pics/work4.jpg">
-                    </div>
+                        <figcaption itemprop="caption">Simbolo del deminio</figcaption>
+                    </figure>
                     <div class="work-text">
                         <h3>Mago Babidi y Majin Buu</h3>
                         <p>Siete años más tarde, a Goku se le da un permiso especial para regresar a la Tierra por un
@@ -479,10 +485,12 @@
                         </li>
                     </ul>
                 </div>
-                <div class="resp-container">
-                    <iframe class="resp-iframe" src="https://www.youtube.com/embed/4ZxruB6nOv8" gesture="media" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                <figure itemscope itemtype="https://schema.org/VideoObject" class="resp-container">
+                    <figcaption>107 curiosidades sobre Dragon Ball</figcaption>
+                    <iframe itemprop="video" class="resp-iframe" src="https://www.youtube.com/embed/4ZxruB6nOv8" gesture="media" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
-                </div>
+                    
+                </figure>
             </div>
         </section>
 
@@ -541,9 +549,9 @@
                         </div>
                     </form>
 
-                    <div class="form-pic">
+                    <figure itemscope itemtype="https://schema.org/ImageObject" class="form-pic">
                         <img src="assets/pics/shenron.png">
-                    </div>
+                    </figure>
                 </div>
             </div>
         </section>
@@ -551,8 +559,8 @@
     <footer itemscope itemtype="http://schema.org/CreativeWork">
        <ul class="footer-wrapper">
            <li class="footer-pic">
-                <figure  itemscope itemtype="https://schema.org/ImageObject">
-                    <img src="./assets/pics/pic-footer.png" alt="">
+                <figure itemscope itemtype="https://schema.org/ImageObject">
+                    <img itemprop="image" src="./assets/pics/pic-footer.png" alt="">
                 </figure>    
            </li>
            <li class="social-icon"> <!-- autores obra, creative work -->

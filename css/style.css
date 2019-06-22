@@ -45,7 +45,7 @@ html {
     scroll-behavior: smooth;
 }
 
-p, form{
+p, form, figcaption{
     font-family: 'Oswald', sans-serif;
 }
 
@@ -53,7 +53,7 @@ p {
     margin-bottom: 1rem;
 }
 
-h1, h2 {
+h1, h2, .kanji {
     -webkit-text-stroke: 0.15rem black;
     color: var(--color-titles);
     font-weight: 900;
@@ -115,10 +115,14 @@ section header::after{
     padding-top: 20em;
 }
 
-.home-header .centered-content h1{
+.home-header .centered-content h1, .kanji {
     -webkit-animation: movecloser 5s infinite; /* Safari 4.0 - 8.0 */
     animation: movecloser 3s linear;
     animation-fill-mode: forwards;
+}
+
+figcaption {
+    text-align: center;
 }
 
 @keyframes movecloser {
@@ -173,8 +177,9 @@ body >  header {
     }
     
 .logo-nav {
-    width: 70%;
-    margin-top: 0.5em;
+    width: 60%;
+    margin-top: 0.5rem;
+    margin-left: .5rem;
 }
 
 .mobile i{
@@ -261,8 +266,7 @@ body >  header {
 
 .studies-content{
     display: grid;
-    grid-template-columns: 6rem auto;
-    margin: 1rem;
+    grid-template-columns: 9rem auto;
 }
 
 .studies-pic img{
