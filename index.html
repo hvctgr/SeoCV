@@ -9,6 +9,7 @@
     <title>Son Goku | Kakarot</title>    
     <meta name="description" content="Son Goku, Protagonista de la serie Dragon Ball" />
     <meta name="keywords" content="manga, dragon ball, saiyan">
+    <meta name="author" content="Hector Vazquez">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Concert+One|Oswald|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
@@ -32,12 +33,12 @@
         </nav>
     </header>
 
-    <main>
+    <main itemscope itemtype="http://schema.org/Person">
         <section id="home">
             <header class="home-header">
                 <div class="centered-content">
-                    <h1>Son Goku</h1>
-                    <p class="kanji">(孫悟空)</p>
+                    <h1 itemprop="name">Son Goku</h1>
+                    <p class="kanji" itemprop="alternateName">(孫悟空)</p>
                 </div>
             </header>
         </section>
@@ -54,17 +55,17 @@
                 <div class="whoiam-content">
                     <div class="whoiam-text">
                         <h3>Son Goku</h3>
-                        <p>Son Goku es el protagonista principal del manga y anime de Dragon Ball creado por Akira
-                            Toriyama. Su nombre real y de nacimiento es Kakarot y es uno de los pocos Saiyan que
-                            lograron sobrevivir a la destrucción total del Planeta Vegeta del Universo 7. Es el segundo
-                            hijo de Bardock y Gine, hermano menor de Raditz, nieto adoptivo de Son Gohan, esposo de
-                            Chi-Chi, padre de Son Gohan y Son Goten, a su vez también es el abuelo de Pan y ancestro de
-                            Son Goku Jr.
+                        <p><span itemscope itemtype="http://schema.org/CreativeWork"> <span itemprop="character">Son Goku</span> es el protagonista principal del <span itemprop="genre">manga</span> y <span itemprop="genre">anime</span> de <span itemprop="name">Dragon Ball</span> creado por <span itemprop="author">Akira
+                            Toriyama</span></span>. Su nombre real y de nacimiento es <span itemprop="additionalName">Kakarot</span> y es uno de los pocos Saiyan que
+                            lograron sobrevivir a la destrucción total del <span itemprop="birthplace" itemscope itemtype="http://schema.org/Place"><span itemprop="name">Planeta Vegeta</span></span> del Universo 7. Es el segundo
+                            hijo de <span itemprop="parent">Bardock</span> y <span itemprop="parent">Gine</span>, hermano menor de <span itemprop="sibling">Raditz</span>, nieto adoptivo de <span itemprop="relatedTo">Son Gohan</span>, esposo de
+                            <span itemprop="spouse">Chi-Chi</span>, padre de <span itemprop="children">Son Gohan</span> y <span itemprop="children">Son Goten</span>, a su vez también es el abuelo de <span itemprop="relatedTo">Pan</span> y ancestro de
+                            <span itemprop="relatedTo">Son Goku Jr</span>.
                         </p>
                     </div>
                    
                     <figure itemscope itemtype="https://schema.org/ImageObject" class="whoiam-pic">
-                        <img  itemprop="image" src="./assets/pics/profile.jpg">
+                        <img  itemprop="image" src="./assets/pics/profile.jpg" alt="Goku">
                         <figcaption itemprop="caption">Son Goku</figcaption>
                     </figure>
                 </div>
@@ -80,9 +81,9 @@
                 </div>
             </header>
             <div class="content-wrapper">
-                <div class="studies-content">
+                <div class="studies-content" itemscope itemtype="http://schema.org/Organization">
                     <figure itemscope itemtype="https://schema.org/ImageObject" class="studies-pic">
-                        <img src="./assets/pics/studies1.png">
+                        <img src="./assets/pics/studies1.png" alt="Kame">
                         <figcaption itemprop="caption">Kame</figcaption>
                     </figure>
                     <div class="studies-text">
@@ -92,9 +93,9 @@
                             Original</p>
                     </div>
                 </div>
-                <div class="studies-content">
+                <div class="studies-content" itemscope itemtype="http://schema.org/Organization">
                     <figure itemscope itemtype="https://schema.org/ImageObject" class="studies-pic">
-                        <img src="./assets/pics/studies2.jpg">
+                        <img src="./assets/pics/studies2.jpg" alt="Kami">
                         <figcaption itemprop="caption">Kami</figcaption>
                     </figure>
                     <div class="studies-text">
@@ -105,9 +106,9 @@
                             propio también.</p>
                     </div>
                 </div>
-                <div class="studies-content">
+                <div class="studies-content" itemscope itemtype="http://schema.org/Organization"> 
                     <figure itemscope itemtype="https://schema.org/ImageObject" class="studies-pic">
-                        <img src="./assets/pics/studies3.jpg">
+                        <img src="./assets/pics/studies3.jpg" alt="Kaio">
                         <figcaption itemprop="caption">Kaio</figcaption>
                     </figure>
                     <div class="studies-text">
@@ -133,7 +134,7 @@
             <div class="content-wrapper">
                 <div class="work-content">
                     <figure itemscope itemtype="https://schema.org/ImageObject" class="work-pic">
-                        <img src="./assets/pics/work1.jpg">
+                        <img src="./assets/pics/work1.jpg" alt="Escenario torneo">
                         <figcaption itemprop="caption">Escenario torneo</figcaption>
                     </figure>
                     <div class="work-text">
@@ -167,7 +168,7 @@
                 </div>
                 <div class="work-content">
                     <figure itemscope itemtype="https://schema.org/ImageObject" class="work-pic">
-                        <img src="./assets/pics/work2.jpg">
+                        <img src="./assets/pics/work2.jpg" alt="Planeta Namek">
                         <figcaption itemprop="caption">Planeta Namek</figcaption>
                     </figure>
                     <div class="work-text">
@@ -256,7 +257,7 @@
                 </div>
                 <div class="work-content">
                     <figure itemscope itemtype="https://schema.org/ImageObject" class="work-pic">
-                        <img src="./assets/pics/work3.png">
+                        <img src="./assets/pics/work3.png" alt="Red Ribbon Army">
                         <figcaption itemprop="caption">Red Ribbon Army</figcaption>
                     </figure>
                     <div class="work-text">
@@ -329,7 +330,7 @@
                 </div>
                 <div class="work-content">
                     <figure itemscope itemtype="https://schema.org/ImageObject" class="work-pic">
-                        <img src="./assets/pics/work4.jpg">
+                        <img src="./assets/pics/work4.jpg" alt="Simbolo del deminio">
                         <figcaption itemprop="caption">Simbolo del deminio</figcaption>
                     </figure>
                     <div class="work-text">
@@ -486,10 +487,9 @@
                     </ul>
                 </div>
                 <figure itemscope itemtype="https://schema.org/VideoObject" class="resp-container">
-                    <figcaption>107 curiosidades sobre Dragon Ball</figcaption>
-                    <iframe itemprop="video" class="resp-iframe" src="https://www.youtube.com/embed/4ZxruB6nOv8" gesture="media" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    
+                    <figcaption itemprop="description name">107 curiosidades sobre Dragon Ball (<span itemprop="uploadDate">27/10/2015</span>)</figcaption>
+                    <iframe itemprop="video thumbnailUrl contentUrl" class="resp-iframe" src="https://www.youtube.com/embed/4ZxruB6nOv8" gesture="media" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>                
                 </figure>
             </div>
         </section>
@@ -550,7 +550,7 @@
                     </form>
 
                     <figure itemscope itemtype="https://schema.org/ImageObject" class="form-pic">
-                        <img src="assets/pics/shenron.png">
+                        <img src="assets/pics/shenron.png" alt="Shenron">
                     </figure>
                 </div>
             </div>
@@ -560,7 +560,7 @@
        <ul class="footer-wrapper">
            <li class="footer-pic">
                 <figure itemscope itemtype="https://schema.org/ImageObject">
-                    <img itemprop="image" src="./assets/pics/pic-footer.png" alt="">
+                    <img itemprop="image" src="./assets/pics/pic-footer.png" alt="Energy ball">
                 </figure>    
            </li>
            <li class="social-icon"> <!-- autores obra, creative work -->
