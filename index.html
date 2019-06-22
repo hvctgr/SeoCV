@@ -40,11 +40,6 @@
                     <p>(孫悟空)</p>
                 </div>
             </header>
-            <div class="content-wrapper">
-                <article style="margin-bottom:4rem;">
-
-                </article>
-            </div>
         </section>
 
         <section id="whoiam">
@@ -56,22 +51,24 @@
                 </div>
             </header>
             <div class="content-wrapper">
-                <article class="whoiam-content">
+                <div class="whoiam-content">
                     <div class="whoiam-text">
                         <h3>Son Goku</h3>
                         <p>Son Goku es el protagonista principal del manga y anime de Dragon Ball creado por Akira
-                            Toriyama. Su nombre real y de nacimiento es Kakarrot y es uno de los pocos Saiyan que
+                            Toriyama. Su nombre real y de nacimiento es Kakarot y es uno de los pocos Saiyan que
                             lograron sobrevivir a la destrucción total del Planeta Vegeta del Universo 7. Es el segundo
                             hijo de Bardock y Gine, hermano menor de Raditz, nieto adoptivo de Son Gohan, esposo de
                             Chi-Chi, padre de Son Gohan y Son Goten, a su vez también es el abuelo de Pan y ancestro de
                             Son Goku Jr.
                         </p>
                     </div>
-                    <!-- figure caption -->
+                   
                     <div class="whoiam-pic">
-                        <img src="./assets/pics/profile.jpg">
+                        <figure itemscope itemtype="https://schema.org/ImageObject">
+                            <img src="./assets/pics/profile.jpg">
+                        </figure>
                     </div>
-                </article>
+                </div>
             </div>
         </section>
 
@@ -84,7 +81,7 @@
                 </div>
             </header>
             <div class="content-wrapper">
-                <article class="studies-content">
+                <div class="studies-content">
                     <div class="studies-pic">
                         <img src="./assets/pics/studies1.png">
                     </div>
@@ -94,8 +91,8 @@
                             Marcial versátil y el más experimentado, con un gran arsenal de técnicas como el Kamehameha
                             Original</p>
                     </div>
-                </article>
-                <article class="studies-content">
+                </div>
+                <div class="studies-content">
                     <div class="studies-pic">
                         <img src="./assets/pics/studies2.jpg">
                     </div>
@@ -106,8 +103,8 @@
                             acciones del enemigo sin utilizar los sentidos, sintiendo el Ki de los demás y ocultando el
                             propio también.</p>
                     </div>
-                </article>
-                <article class="studies-content">
+                </div>
+                <div class="studies-content">
                     <div class="studies-pic">
                         <img src="./assets/pics/studies3.jpg">
                     </div>
@@ -117,7 +114,7 @@
                             la Genki-dama, dos técnicas de su invención, pero que ni él mismo había conseguido llevar a
                             cabo.</p>
                     </div>
-                </article>
+                </div>
 
 
             </div>
@@ -132,7 +129,7 @@
                 </div>
             </header>
             <div class="content-wrapper">
-                <article class="work-content">
+                <div class="work-content">
                     <div class="work-pic">
                         <img src="./assets/pics/work1.jpg">
                     </div>
@@ -164,8 +161,8 @@
                         <i class="show-more show-more-work1 fas fa-chevron-down"></i>
 
                     </div>
-                </article>
-                <article class="work-content">
+                </div>
+                <div class="work-content">
                     <div class="work-pic">
                         <img src="./assets/pics/work2.jpg">
                     </div>
@@ -252,8 +249,8 @@
                         </div>
                         <i class="show-more show-more-work2 fas fa-chevron-down"></i>
                     </div>
-                </article>
-                <article class="work-content">
+                </div>
+                <div class="work-content">
                     <div class="work-pic">
                         <img src="./assets/pics/work3.png">
                     </div>
@@ -324,8 +321,8 @@
                         </div>
                         <i class="show-more show-more-work3 fas fa-chevron-down"></i>
                     </div>
-                </article>
-                <article class="work-content">
+                </div>
+                <div class="work-content">
                     <div class="work-pic">
                         <img src="./assets/pics/work4.jpg">
                     </div>
@@ -405,7 +402,7 @@
                         </div>
                         <i class="show-more show-more-work4 fas fa-chevron-down"></i>
                     </div>
-                </article>
+                </div>
             </div>
         </section>
 
@@ -551,16 +548,20 @@
             </div>
         </section>
     </main>
-    <footer>
-       <div class="footer-wrapper">
-           <div class="footer-pic">
-                <img src="./assets/pics/pic-footer.png" alt="">
-           </div>
-           <div class="social-icon">
-               <a href="https://www.facebook.com/ToeianimationJP"><i class="btn fab fa-facebook"></i></a>
-               <a href="https://github.com/hvctgr"><i class="btn fab fa-github-square"></i></a>
-           </div>
-       </div>
+    <footer itemscope itemtype="http://schema.org/CreativeWork">
+       <ul class="footer-wrapper">
+           <li class="footer-pic">
+                <figure  itemscope itemtype="https://schema.org/ImageObject">
+                    <img src="./assets/pics/pic-footer.png" alt="">
+                </figure>    
+           </li>
+           <li class="social-icon"> <!-- autores obra, creative work -->
+               <a href="https://www.facebook.com/ToeianimationJP" title="Toei Animation Webpage"><span class="btn fab fa-facebook"></span></a>
+           </li>
+            <li class="social-icon"> <!-- autores de esto -->
+               <a href="https://github.com/hvctgr" title="Hector's Github repository"><span class="btn fab fa-github-square"></span></a>
+            </li>
+       </ul>
     </footer>
 </body>
 <script src="js/app.js" type="module"></script>

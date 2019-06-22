@@ -240,6 +240,10 @@ body >  header {
 }
 
 
+#home{
+    margin-bottom:4rem;
+}
+
 /* Who I am */ 
 
 .whoiam-content{
@@ -425,13 +429,14 @@ input, textarea, select {
 
 .footer-wrapper{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    list-style-type: none;
 }
-
 .footer-pic{
     text-align: right; 
 }
-
 .footer-pic img{
     width: 10rem;
 }
