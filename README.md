@@ -1,6 +1,6 @@
 # SEO CV
 
-Modificación de fantastiCV para optimizarla de cara al SEO.
+Modificación de [fantastiCV](https://github.com/hvctgr/fantastiCV) para optimizarla de cara al SEO.
 
 
 ## Consideraciones en el maquetado
@@ -20,18 +20,23 @@ Modificación de fantastiCV para optimizarla de cara al SEO.
 
 ## Consideraciones en los microdatos
 
-- Al tratarse de un personaje ficticio, he considerado a sus maestros como `Organization` y a las batallas como si fueran `Action`.
+- En la sección donde se introduce al personaje se hace uso de `CreativeWork` para resaltar el nombre de la obra, el genero y el autor.
 
-- 
+- Al tratarse de un personaje ficticio, he considerado a sus maestros como `Organization` al tratarse de escuelas/estilos de artes marciales.
 
--
+- Para las batallas me he decantado por el schema `InteractAction` dado que se corresponden a una interacción con otras personas u organizaciones.
 
+- En el apartado curiosidades he dudado entre `ListItem` e `ItemList`. Me he decantado por `ItemList` porque en este caso se muestran una serie de curiosidades sin tener que ver las unas con las otras. `ListItem` se usa en acciones por pasos o checklist.
+
+- Al ser curiosidades, no se resalta nada de ellas.
+
+- Como en la sección de Contacto no hay ningún información destacable no se han añadido microdatos.
 
 
 ## Herramientas utilizadas:
 
-Para comprobar la estructuracion del contenido se ha utilizado:
+Para comprobar la estructuración y contenido de la web se ha utilizado:
 
-- Herramienta de pruebas de datos estructurados de Google (https://search.google.com/structured-data/testing-tool)
+- [Herramienta de pruebas de datos estructurados de Google](https://search.google.com/structured-data/testing-tool).
 
-- Plugin para chrome de headingsMap (https://chrome.google.com/webstore/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi)
+- Plugin para chrome de [headingsMap](https://chrome.google.com/webstore/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi).
