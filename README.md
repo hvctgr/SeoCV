@@ -9,11 +9,11 @@ Modificación de [fantastiCV](https://github.com/hvctgr/fantastiCV) para optimiz
 
 - Se han juntado en un archivo los estilos y en otro los scripts.
 
-- Para el menu de navegacion. Se unifica en uno para mobile y desktop, se utiliza la etiqueta `i` para diferenciar los iconos del texto descriptivo que está entre `span`.
+- Para el menu de navegación. Se unifica en uno para mobile y desktop, se utiliza la etiqueta `i` para diferenciar los iconos del texto descriptivo que está entre `span`.
 
 - De forma general, cada una de las secciones contiene un `header`, donde se ubica el banner con nombre de cada sección, y un `div` con el contenido de la sección a efectos de manejar los estilos.
 
-- Todas las etiquetas `div` que anteriormente envolvían a imágenes o vídeo se han cambiado por `figure`. Además en aquellas que no eran logos se les ha añadido un `figcaption`.
+- Todas las etiquetas `div` que anteriormente envolvían a imágenes o vídeo se han cambiado por `figure`. Además, en aquellas que no eran logos se les ha añadido un `figcaption`.
 
 - El footer ha pasado a listarse como 3 elementos `li` (imagen e iconos a enlaces externos).
 
@@ -26,7 +26,7 @@ Modificación de [fantastiCV](https://github.com/hvctgr/fantastiCV) para optimiz
 
 - Para las batallas me he decantado por el schema `InteractAction` dado que se corresponden a una interacción con otras personas u organizaciones.
 
-- En el apartado curiosidades he dudado entre `ListItem` e `ItemList`. Me he decantado por `ItemList` porque en este caso se muestran una serie de curiosidades sin tener que ver las unas con las otras. `ListItem` se usa en acciones por pasos o checklist.
+- En el apartado curiosidades he dudado entre `ListItem` e `ItemList`. Me he decantado por `ListItem` porque en este caso se muestran una serie de curiosidades sin tener que ver las unas con las otras e `ItemList` requería especificar una posición.
 
 - Al ser curiosidades, no se resalta nada de ellas.
 
